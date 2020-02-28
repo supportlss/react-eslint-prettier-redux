@@ -1,10 +1,12 @@
 import React from "react";
 import "./App.css";
+import PureReduxCounter from "./component/sample/PureReduxCounter";
+import PureRedux from "./component/pureReduxDemo";
 
 function App() {
   return (
     <div className="App">
-      <p>hello, please import you component in App.js, then it will appear here</p>
+      <PureRedux />
     </div>
   );
 }
