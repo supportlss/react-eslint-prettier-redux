@@ -5,7 +5,8 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import Counter from "./component/Counter";
 
-ReactDOM.render(<Counter />, document.getElementById("root"));
+// ReactDOM.render(<Counter />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
 
 console.log("aaa");
 

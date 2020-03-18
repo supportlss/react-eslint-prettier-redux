@@ -1,11 +1,16 @@
 import React from "react";
 import "./App.css";
+import {Provider} from "react-redux";
+import store from "./store";
+import CounterComponent from "./async/CounterComponent";
+import UserListComponent from "./async/UserListComponent";
 
 function App() {
   return (
-    <div className="App">
-      <p>hello, please import you component in App.js, then it will appear here</p>
-    </div>
+    <Provider store={store}>
+      <CounterComponent />
+      <UserListComponent />
+    </Provider>
   );
 }
 
