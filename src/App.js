@@ -1,11 +1,16 @@
 import React from "react";
 import "./App.css";
+import store from "./store.js";
+import {Provider} from "react-redux";
+import CounterComponent from "./component/redux/CounterComponent";
 
 function App() {
   return (
-    <div className="App">
-      <p>hello, please import you component in App.js, then it will appear here</p>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <CounterComponent />
+      </div>
+    </Provider>
   );
 }
 
